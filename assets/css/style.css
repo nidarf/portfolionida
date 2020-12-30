@@ -924,6 +924,8 @@ section {
 .testimonials .testimonial-item {
   box-sizing: content-box;
   min-height: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
