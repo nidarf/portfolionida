@@ -923,7 +923,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  min-height: 320px;
+  min-height: 270px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -1006,6 +1006,167 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Certificates
+--------------------------------------------------------------*/
+.certificates .slider{
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.certificates .slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.certificates input{
+  display: none;
+}
+
+.certificates .slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.certificates .slide img{
+  width: 800px;
+  height: 500px;
+}
+
+.certificates .navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.certificates .manual-btn{
+  border: 2px solid #ddd;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.certificates .manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.certificates .manual-btn:hover{
+  background: #d43076;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+.certificates .navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 520px;
+}
+
+.certificates .navigation-auto div{
+  border: 2px solid #ddd;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.certificates .navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #d43076;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #d43076;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #d43076;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #d43076;
+}
+
+.certificates .testimonial-item {
+  box-sizing: content-box;
+  min-height: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.certificates .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 45px;
+  color: #2c4964;
+}
+
+.certificates .testimonial-item h4 {
+  font-size: 14px;
+  color: #6b96be;
+  margin: 0 0 0 45px;
+}
+
+.certificates .testimonial-item p {
+  font-style: italic;
+  margin: 0 15px 0 15px;
+  padding: 20px 20px 60px 20px;
+  background: #fff;
+  position: relative;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.certificates .owl-nav, .testimonials .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.certificates .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.certificates .owl-dot.active {
+  background-color: #d43076 !important;
+}
+
+@media (max-width: 767px) {
+  .certificates {
+    margin: 30px 10px;
+  }
+}
+
+/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact .contact-about h3 {
@@ -1028,6 +1189,7 @@ section {
 
 .contact .social-links {
   padding-bottom: 20px;
+  align-items: center;
 }
 
 .contact .social-links a {
@@ -1044,6 +1206,12 @@ section {
   height: 36px;
   transition: 0.3s;
   border: 1px solid #d43076;
+}
+
+.contact .social-links p{
+  padding: 0 0 10px 42px;
+  line-height: 28px;
+  font-size: 14px;
 }
 
 .contact .social-links a:hover {
