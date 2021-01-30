@@ -923,6 +923,21 @@ section {
   padding: 0 0 0 0;
 }
 
+.portfolio-details .portfolio-description .iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+
+.portfolio-details .portfolio-description .iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 768px) {
   .portfolio-details .portfolio-description h2 {
     width: 100%;
@@ -1374,6 +1389,22 @@ section {
 
 #footer .copyright {
   text-align: center;
+}
+
+#footer .copyright .contact-about .social-links a{
+  font-size: 18px;
+  display: inline-block;
+  background: #fff;
+  color: #d43076;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  border: 1px solid #d43076;
 }
 
 #footer .credits {
